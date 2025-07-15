@@ -52,4 +52,14 @@ docker run -d \
   bash -c "/opt/spark/sbin/start-worker.sh spark://spark-master:7077 && tail -f /opt/spark/logs/\*.out"
 ```
 
-I will set up CI/CD and a Docker Compose later.
+Or simply use Docker Compose. The docker-compose.yaml file sets up 3 things:
+
+- A spark-net network for the containers in the compose deployment to communicate with each other
+- 1 spark-master container
+- 2 spark-worker containers
+
+```code
+docker compose up -d
+```
+
+I will set up CI/CD later.
