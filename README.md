@@ -2,6 +2,11 @@
 
 This repository is going to house all of my experimental PySpark scripts. I may set up a CI/CD pipeline to build Docker images with required JARs later.
 
+### TL;DR
+- Custom JARs to connect with Minio
+- Optimized Dockerfiles for SparkOnK8s
+- Docker Compose to set up 1 master and 2 workers
+
 ## Setup
 
 Clone this repository and do poetry install.
